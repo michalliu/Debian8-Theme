@@ -17,22 +17,22 @@ mv .conky_time.rc /usr/share/conky/.conky_time.rc
 mv .conky_audacious.rc /usr/share/conky/.conky_audacious.rc
 
 # xserver
-apt-get install xserver-xorg
+apt-get -y install xserver-xorg
 
 # xdm
-apt-get install xdm
+apt-get -y install xdm
 
 # Openbox
-apt-get install openbox
+apt-get -y install openbox
 
 # conky
-apt-get install conky
+apt-get -y install conky
 
 # base misc
-apt-get install midori lxterminal obmenu pcmanfm
+apt-get -y install midori lxterminal obmenu pcmanfm
 
 # misc
-apt-get install audacious vlc libreoffice
+apt-get -y install audacious vlc
 
 # Reboot
 reboot
