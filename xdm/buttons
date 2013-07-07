@@ -5,10 +5,10 @@ if which xmessage >> /dev/null 2>&1; then
 
 	case "$?" in
 		101)
-			reboot
+			sbin/reboot
 			;;
 		102)
-			halt
+			sbin/halt
 			;;
 	esac
 fi

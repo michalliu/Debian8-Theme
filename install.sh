@@ -22,7 +22,14 @@ apt-get -y install xserver-xorg
 # xdm
 apt-get -y install xdm
 rm /etc/xdg/openbox/autostart
-
+wget https://raw.github.com/Vagdish/Debian8-Theme/master/xdm/buttons
+wget https://raw.github.com/Vagdish/Debian8-Theme/master/xdm/Xsetup
+wget https://raw.github.com/Vagdish/Debian8-Theme/master/xdm/Xressources
+rm /etc/X11/xdm/Xsetup
+rm /etc/X11/xdm/Xressources
+mv buttons /etc/X11/xdm/buttons
+mv /etc/X11/xdm/Xsetup
+mv /etc/X11/xdm/Xressources
 
 # Openbox
 apt-get -y install openbox
@@ -34,7 +41,7 @@ apt-get -y install conky
 apt-get -y install midori lxterminal obmenu pcmanfm feh
 
 # misc
-apt-get -y install audacious vlc feh
+apt-get -y install audacious vlc feh xclock
 
 # Reboot
 reboot
