@@ -32,3 +32,10 @@ cp lxpanel/panel /etc/xdg/lxpanel/profile/LXDE/panels/
 # Setup backgrounds
 rm /etc/xdg/pcmanfm/LXDE/pcmanfm.conf
 cp lxde/pcmanfm.conf /etc/xdg/pcmanfm/LXDE/
+
+# Openbox setup
+rm /etc/xdg/openbox/LXDE/rc.xml
+cp openbox/rc.xml /etc/xdg/openbox/LXDE/
+
+# Reboot
+reboot
