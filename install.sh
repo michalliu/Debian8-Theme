@@ -1,47 +1,26 @@
-#!/bin/bash
+#!/bin/sh
 
 # Update/Upgrade
 apt-get update
 apt-get -y upgrade
 
-# Download and install files
-# Wallpaper:
-wget https://raw.github.com/Vagdish/Debian8-Theme/master/wallpapers/grand_pix_by_nosphere_debianized.png
-mkdir /usr/share/backgrounds
-mv grand_pix_by_nosphere_debianized.png /usr/share/backgrounds/grand_pix_by_nosphere_debianized.png
-# Conky
-https://raw.github.com/Vagdish/Debian8-Theme/master/conky/.conky_time.rc
-https://raw.github.com/Vagdish/Debian8-Theme/master/conky/.conky_audacious.rc
-mkdir /usr/share/conky
-mv .conky_time.rc /usr/share/conky/.conky_time.rc
-mv .conky_audacious.rc /usr/share/conky/.conky_audacious.rc
+# Install base packages
+apt-get -y install xserver-xorg slim lxde-core iceweasel lxterminal gpicview leafpad lxappearance lxde-icon-theme lxinput lxrandr lxsession-edit lxshortcut lxterminal obconf xarchiver menu-xdg lxtask wicd git
 
-# xserver
-apt-get -y install xserver-xorg
+# Aiming to use slimlock instead
+apt-get -y purge xscreensaver
 
-# xdm
-apt-get -y install xdm
-rm /etc/xdg/openbox/autostart
-wget https://raw.github.com/Vagdish/Debian8-Theme/master/xdm/buttons
-wget https://raw.github.com/Vagdish/Debian8-Theme/master/xdm/Xsetup
-wget https://raw.github.com/Vagdish/Debian8-Theme/master/xdm/Xressources
-rm /etc/X11/xdm/Xsetup
-rm /etc/X11/xdm/Xressources
-mv buttons /etc/X11/xdm/buttons
-mv /etc/X11/xdm/Xsetup
-mv /etc/X11/xdm/Xressources
+# Work in /tmp dir and grab files
+cd /tmp
+git clone https://github.com/Vagdish/Debian8-Theme.git
 
-# Openbox
-apt-get -y install openbox
+# Save wallpaper in /usr/share/backgrounds
+mkdir /usr/share/backgrounds/
+cp wallpaper/jessy-background.png /usr/share/backgrounds/
 
-# conky
-apt-get -y install conky
+# Setup slim theme
 
-# base misc
-apt-get -y install midori lxterminal obmenu pcmanfm feh
+# Setup lxpanel
 
-# misc
-apt-get -y install audacious vlc feh xclock
+# Setup backgrounds
 
-# Reboot
-reboot

@@ -1,5 +1,0 @@
-feh --bg-fill /usr/share/backgrounds/grand_pix_by_nosphere_debianized.png
-
-/etc/X11/xdm/arch-xdm/buttons &
-
-xclock &
