@@ -14,13 +14,20 @@ apt-get -y purge xscreensaver
 cd /tmp
 git clone https://github.com/Vagdish/Debian8-Theme.git
 
-# Save wallpaper in /usr/share/backgrounds
+# Save wallpaper and debian logo in /usr/share/backgrounds
 mkdir /usr/share/backgrounds/
 cp wallpaper/jessy-background.png /usr/share/backgrounds/
+cp openlogo-nd.svg /usr/share/backgrounds/
 
 # Setup slim theme
+cp -R slim/jessy-slim /usr/share/slim/themes/
+rm /etc/slim.conf
+cp slim/slim.conf /etc/
 
 # Setup lxpanel
+rm /etc/xdg/lxpanel/profile/LXDE/panels/panel
+cp lxpanel/panel /etc/xdg/lxpanel/profile/LXDE/panels/
 
 # Setup backgrounds
-
+rm /etc/xdg/pcmanfm/LXDE/pcmanfm.conf
+cp lxde/pcmanfm.conf /etc/xdg/pcmanfm/LXDE/
