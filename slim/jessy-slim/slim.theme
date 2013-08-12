@@ -11,8 +11,8 @@ msg_shadow_xoffset 1
 msg_shadow_yoffset 1
 
 # valid values: stretch, tile
-background_style        stretch
-background_color        #eedddd
+background_style        center
+background_color        #000000
 
 # Input controls
 input_panel_x           50%

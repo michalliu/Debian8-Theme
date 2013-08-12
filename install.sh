@@ -5,7 +5,7 @@ apt-get update
 apt-get -y upgrade
 
 # Install base packages
-apt-get -y install xserver-xorg slim lxde-core iceweasel lxterminal gpicview leafpad lxappearance lxde-icon-theme lxinput lxrandr lxsession-edit lxshortcut lxterminal obconf xarchiver menu-xdg lxtask wicd git
+apt-get -y install xserver-xorg slim lxde-core iceweasel lxterminal gpicview leafpad lxappearance lxde-icon-theme lxinput lxrandr lxsession-edit lxshortcut obconf xarchiver menu-xdg lxtask wicd git
 
 # Aiming to use slimlock instead
 apt-get -y purge xscreensaver
@@ -13,6 +13,7 @@ apt-get -y purge xscreensaver
 # Work in /tmp dir and grab files
 cd /tmp
 git clone https://github.com/Vagdish/Debian8-Theme.git
+cd Debian8-Theme
 
 # Save wallpaper and debian logo in /usr/share/backgrounds
 mkdir /usr/share/backgrounds/
