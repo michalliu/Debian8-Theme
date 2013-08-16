@@ -37,9 +37,8 @@ cp lxde/pcmanfm.conf /etc/xdg/pcmanfm/LXDE/
 rm /etc/xdg/openbox/LXDE/rc.xml
 cp openbox/rc.xml /etc/xdg/openbox/LXDE/
 
-# Change Gtk theme to Mist
-rm -R /usr/share/themes/Default/
-cp -R /usr/share/themes/Mist/ /usr/share/themes/Default
+# Change logout banner
+cp /lxde/logout-banner.png /usr/share/lxde/images/logout-banner.png
 
 # Reboot
 reboot
