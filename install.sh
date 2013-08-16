@@ -5,7 +5,7 @@ apt-get update
 apt-get -y upgrade
 
 # Install base packages
-apt-get -y install xserver-xorg slim lxde-core midori lxterminal gpicview leafpad lxappearance lxde-icon-theme lxinput lxrandr lxsession-edit lxshortcut obconf xarchiver menu-xdg lxtask wicd git evince sylpheed gtk-​​theme-​​switch
+apt-get -y install xserver-xorg slim lxde-core midori lxterminal gpicview leafpad lxappearance lxde-icon-theme lxinput lxrandr lxsession-edit lxshortcut obconf xarchiver menu-xdg lxtask wicd git evince sylpheed gtk-theme-switch
 
 # Aiming to use slimlock instead
 apt-get -y purge xscreensaver
