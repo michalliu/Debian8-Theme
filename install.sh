@@ -38,7 +38,7 @@ rm /etc/xdg/openbox/LXDE/rc.xml
 cp openbox/rc.xml /etc/xdg/openbox/LXDE/
 
 # Change logout banner
-cp /lxde/logout-banner.png /usr/share/lxde/images/logout-banner.png
+cp lxde/logout-banner.png /usr/share/lxde/images/logout-banner.png
 
 # Reboot
 reboot
