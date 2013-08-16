@@ -68,7 +68,10 @@ Plugin {
             id=pcmanfm.desktop
         }
         Button {
-            id=/usr/share/applications/iceweasel.desktop
+            id=/usr/share/applications/midori.desktop
+        }
+        Button {
+            id=/usr/share/applications/sylpheed.desktop
         }
     }
 }
