@@ -5,7 +5,7 @@ apt-get update
 apt-get -y upgrade
 
 # Install base packages
-apt-get -y install xserver-xorg slim lxde-core midori lxterminal gpicview leafpad lxappearance lxde-icon-theme lxinput lxrandr lxsession-edit lxshortcut obconf xarchiver menu-xdg lxtask wicd git evince sylpheed gtk-theme-switch
+apt-get -y install xserver-xorg slim lxde-core midori lxterminal gpicview leafpad lxappearance lxde-icon-theme lxinput lxrandr lxsession-edit lxshortcut obconf xarchiver menu-xdg lxtask wicd git evince sylpheed
 
 # Aiming to use slimlock instead
 apt-get -y purge xscreensaver
@@ -38,7 +38,8 @@ rm /etc/xdg/openbox/LXDE/rc.xml
 cp openbox/rc.xml /etc/xdg/openbox/LXDE/
 
 # Change Gtk theme to Mist
-gtk-theme-switch2 /usr/share/themes/Mist/
+rm -R /usr/share/themes/Default/
+cp -R /usr/share/themes/Mist/ /usr/share/themes/Default
 
 # Reboot
 reboot
