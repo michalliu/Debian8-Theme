@@ -15,21 +15,8 @@
 ]>
 <svg 
 	 xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" i:viewOrigin="262 450" i:rulerOrigin="0 0" i:pageBounds="0 792 612 0"
-	 xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
 	 width="87.041" height="108.445" viewBox="0 0 87.041 108.445" overflow="visible" enable-background="new 0 0 87.041 108.445"
 	 xml:space="preserve">
-	<metadata>
-		<variableSets  xmlns="&ns_vars;">
-			<variableSet  varSetName="binding1" locked="none">
-				<variables></variables>
-				<v:sampleDataSets  xmlns="&ns_custom;" xmlns:v="&ns_vars;"></v:sampleDataSets>
-			</variableSet>
-		</variableSets>
-		<sfw  xmlns="&ns_sfw;">
-			<slices></slices>
-			<sliceSourceBounds  y="341.555" x="262" width="87.041" height="108.445" bottomLeftOrigin="true"></sliceSourceBounds>
-		</sfw>
-	</metadata>
 	<g id="Layer_1" i:layer="yes" i:dimmedPercent="50" i:rgbTrio="#4F008000FFFF">
 		<g>
 			<path i:knockout="Off" fill="#D70751" d="M51.986,57.297c-1.797,0.025,0.34,0.926,2.686,1.287
